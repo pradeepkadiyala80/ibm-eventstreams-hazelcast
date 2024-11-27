@@ -1,0 +1,73 @@
+{
+  "_id": "OWB-1542229206655",
+  "_rev": "1-afe5252e29ea342951062d0693de02fa",
+  "source": "Checkout Configuration Workbench",
+  "status": 75,
+  "groupId": "1542229216655",
+  "name": "IBM Food Trust",
+  "sourceLanguage": "en",
+  "targetLanguage": "de",
+  "toolId": "edition publisher",
+  "toolName": "Commerce Configuration",
+  "requestOWBTranslation": {
+    "timestamp": 1542229206655,
+    "body": {
+      "file": {
+        "id": {
+          "editionID": "EIDW6UF4",
+          "revision": 3,
+          "productId": "7ad04761551271d4ee1b91c446950d24"
+        },
+        "name": "IBM Food Trust",
+        "offeringID": "7ad04761551271d4ee1b91c446950d24",
+        "offeringName": "IBM Food Trust",
+        "sourceLanguage": "en",
+        "targetLanguage": "de",
+        "dataType": "plaintext",
+        "toolName": "Commerce Configuration",
+        "toolId": "edition publisher",
+        "metadata": {
+          "editionID": "EIDW6UF4",
+          "revision": 3,
+          "sourceDataType": "edition"
+        },
+        "sourceData": {
+          "editionName": "Small Business",
+          "footerDescription": "IBM Food Trust is a cloud-based application that enables participants in the food ecosystem to work together to create transparency and trust, making the world's food supply safer.",
+          "editionDetails": [
+            "Access to a growing Blockchain network with food industry leaders and influencers",
+            "Increase trust and ensure verification of information through immutable data records",
+            "Ability to customize your plan with options that are right for your business"
+          ],
+          "partSettings": [
+            {
+              "description": "Built for small businesses, securely and transparently trace the location and status of food products up and down the supply chain.",
+              "label": "Trace"
+            },
+            {
+              "description": "Built for small businesses, securely upload and manage certificates throughout the entire supply chain.",
+              "label": "Certificates"
+            },
+            {
+              "details": [
+                "Ticket creation/updates",
+                "Ability to attach documents for review by Support",
+                "Simplified search capability to view ticket history and knowledge base artifacts"
+              ],
+              "label": "Monthly Standard Support ",
+              "description": "Gain access to IBM Food Trust experts. "
+            },
+            {
+              "details": [
+                "Learn how to add products, facilities, and process maps",
+                "One-time charge"
+              ],
+              "label": "Virtually Guided Onboarding",
+              "description": "Engage with IBM Food Trust experts to receive hands-on virtual onboarding. "
+            }
+          ]
+        }
+      }
+    }
+  }
+}

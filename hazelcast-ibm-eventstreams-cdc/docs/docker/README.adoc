@@ -1,0 +1,16 @@
+= Docker Build and Run
+
+*Pre-requsite*
+
+- Install Docker desktop on your local machine
+    * Mac OS https://docs.docker.com/desktop/install/mac-install/[link]
+
+*Build from Docker file*
+
+- execute `docker build -t hazelcast/data-pipeline .`
+
+*Run docker image*
+
+- execute `docker run -e BOOTSTRAP_SERVERS=<<BOOTSTRAP-SERVERS>> -e KAFKA_PWD=<<KAFKA Password>> -p 9090:9090 hazelcast/data-pipeline:latest`
+
+

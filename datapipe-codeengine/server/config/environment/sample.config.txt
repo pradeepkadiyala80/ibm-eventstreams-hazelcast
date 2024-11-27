@@ -1,0 +1,34 @@
+/**
+ * Licensed Materials - Property of IBM
+ *
+ * @ Copyright IBM Corp. 2014,2015 All Rights Reserved
+ *
+ * US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with
+ * IBM Corp.
+ */
+export let developmentEnvironment = {
+  webRoot: '<CUSTOM WEBROOT>',
+  webHost: '<localhost:3000>',
+  cfApp: {
+    'port': 3001,
+    'host': '127.0.0.1',
+    'uris': ['localhost:9000'],
+    'application_uris': ['localhost:9000']
+  },
+  logging: {
+    level: 'debug',
+    dir: './tmp/logs',
+    transports: ['Console', 'File'],
+    // Console: to print in console where the app runs
+    // File: To a .tmp/log/files
+    // Logentries: For production and stage you can log to logentries
+    clsLogStore: 'logMetadataStore'    
+  },
+  tokenSecret: 'secret', // JWT token secret
+  jwtAlgorithms: ['HS256'],
+  cloudant: {
+    url: process.env.CFCI_DB_URL, //#required Cloudant DB URL
+    apiKey: process.env.CFCI_DB_APIKEY, //#required CLOUDANT DB API KEY
+    db: process.env.DB_NAME //#required CLOUDANT DB NAME
+  }
+};

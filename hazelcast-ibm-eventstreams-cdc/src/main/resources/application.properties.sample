@@ -1,0 +1,10 @@
+bootstrap.servers=<broker-url-1,broker-url-2...>
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username="token" password="<PWD>";
+security.protocol=SASL_SSL
+sasl.mechanism=PLAIN
+ssl.protocol=TLSv1.2
+ssl.enabled.protocols=TLSv1.2
+ssl.endpoint.identification.algorithm=HTTPS
+key.serializer=org.apache.kafka.common.serialization.StringSerializer
+value.serializer=org.apache.kafka.common.serialization.StringSerializer
+topic=<mytopic>

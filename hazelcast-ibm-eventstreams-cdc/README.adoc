@@ -1,0 +1,43 @@
+*Data Pipeline*
+
+A pilot POC to create a data pipeline to transmit realtime data updates from On-Prem Monolith applications to IBM Cloud Services using hazelcast cache and IBM event streams
+
+*Pre Requisites:*
+
+Maven
+
+- Java 1.8 or higher
+
+- Spring Boot 2.4.1
+
+- IBM Cloud Event Streams (Create an instance of event streams in IBM Cloud with a topic)
+
+*How to run the application?*
+
+- Configure `application.properties` file using reference file `application.properties.sample` located in link:./src/main/resources[src/main/resources].
+
+- Export the variable `*BOOTSTRAP_SERVERS*` and `*KAFKA_PWD*` with values provided in the link:https://cloud.ibm.com/docs/EventStreams?topic=EventStreams-connecting[IBM Event Streams]
+
+- Run `mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Dserver.port=9090"`
+
+Make sure the properties file has topic name included under property `topic`
+
+
+*How to use the application?*
+
+You can call the API to update the Hazelcast cache. Once the cache is updated, an event is triggered. The event with data is transmitted to IBM Event Streams on IBM Cloud
+
+- Run `curl --data "key=first&value=data1" "localhost:9090/put"`
+- Listen to the IBM Event Streams Topic
+
+*How to run the test scripts?*
+
+`mvn verify -Ptests`
+
+
+*How to run in Docker?*
+
+Follow the documentation provided in the link:./docs/docker/README.adoc[link]
+
+
+//See the link:https://docs.hazelcast.com/tutorials/hazelcast-embedded-springboot[tutorial].

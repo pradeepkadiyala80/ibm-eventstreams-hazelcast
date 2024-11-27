@@ -1,0 +1,11 @@
+{
+  "translationQueue": 51,
+  "translationInSizing": 75,
+  "translationReady": 101,
+  "translationInProcess": 151,
+  "translationComplete": 201,
+  "validationReady": 301,
+  "validationPostEdited": 401,
+  "validationSubmitted": 501,
+  "validationFinal": 601
+}
