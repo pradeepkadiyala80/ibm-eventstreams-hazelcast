@@ -41,6 +41,6 @@ Ensure to have the following cloud services available
 
 | Repository Name  | Git Repository URL | Description |
 |---|---|---|
-| hazelcast-ibm-eventstreams-cdc   | https://github.ibm.com/pkadiya/hazelcast-ibm-eventstreams-cdc   |   |
-| datapipe-codeengine  | https://github.ibm.com/pkadiya/datapipe-codeengine  |   |
+| hazelcast-ibm-eventstreams-cdc   | /hazelcast-ibm-eventstreams-cdc   |   |
+| datapipe-codeengine  | /datapipe-codeengine  |   |
 
