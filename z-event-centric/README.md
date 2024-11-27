@@ -4,9 +4,7 @@ This repository describes a pilot about how we can simulate monolith Java applic
 
 The genereal idea behind this pilot is to describe real-world use case of handling real-time events of Java applications with IBM Cloud Services in a secure and compliant environment.
 
-## Architecture Overview 
-
-The below architecture overview describes how we can implement the realtime data flow model
+## Overview Steps
 
 Steps:
 
